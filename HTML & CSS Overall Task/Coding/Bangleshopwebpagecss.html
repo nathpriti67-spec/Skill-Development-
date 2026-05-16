@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Glass Bangles</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    color:#fff;
+}
+
+/* Header */
+header{
+    background: rgba(0,0,0,0.6);
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
+header h1{
+    font-size:50px;
+    letter-spacing:3px;
+    color:#ffd700;
+}
+
+header p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+}
+
+.hero h2{
+    font-size:60px;
+    color:#fff;
+    text-shadow:3px 3px 10px #000;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:24px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#ffd700;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:#fff;
+    transform:scale(1.1);
+}
+
+/* Collection Section */
+.collection{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.collection h2{
+    font-size:45px;
+    margin-bottom:40px;
+    color:#fff;
+}
+
+.bangle-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    overflow:hidden;
+    width:300px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    color:#ffd700;
+    font-size:28px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    color:#ccc;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Royal Glass Bangles</h1>
+    <p>Elegant Bangles for Every Celebration</p>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Shine With Tradition</h2>
+        <p>Premium Designer Glass Bangles Collection</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="collection">
+    <h2>Our Trending Collections</h2>
+
+    <div class="bangle-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80" alt="Glass Bangles">
+            <h3>Classic Glass</h3>
+            <p>Traditional colorful glass bangles with premium shine.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80" alt="Designer Bangles">
+            <h3>Designer Set</h3>
+            <p>Modern stylish bangles for weddings and festivals.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Bridal Bangles">
+            <h3>Bridal Collection</h3>
+            <p>Luxury bridal bangles with elegant stone designs.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Royal Glass Bangles | Fashion Meets Tradition</p>
+</footer>
+
+</body>
+</html>
