@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bright Future Academy</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f9ff;
+            color:#333;
+        }
+
+        /* Header Section */
+        .hero{
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1509062522246-3755977927d7');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h1{
+            font-size:60px;
+            margin-bottom:20px;
+            text-shadow:2px 2px 10px black;
+        }
+
+        .hero-content p{
+            font-size:24px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            background:#ff9800;
+            color:white;
+            padding:15px 35px;
+            text-decoration:none;
+            border-radius:30px;
+            font-size:20px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#e68900;
+        }
+
+        /* About Section */
+        .about{
+            padding:60px 10%;
+            display:flex;
+            gap:40px;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        .about img{
+            width:450px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .about-text{
+            flex:1;
+        }
+
+        .about-text h2{
+            font-size:40px;
+            color:#0d47a1;
+            margin-bottom:20px;
+        }
+
+        .about-text p{
+            font-size:18px;
+            line-height:1.8;
+        }
+
+        /* Features */
+        .features{
+            background:#0d47a1;
+            color:white;
+            padding:60px 10%;
+            text-align:center;
+        }
+
+        .features h2{
+            font-size:40px;
+            margin-bottom:40px;
+        }
+
+        .feature-box{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            color:#333;
+            width:280px;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card h3{
+            color:#0d47a1;
+            margin-bottom:15px;
+        }
+
+        /* Admission Section */
+        .admission{
+            padding:70px 10%;
+            text-align:center;
+            background:#fff3e0;
+        }
+
+        .admission h2{
+            font-size:42px;
+            color:#e65100;
+            margin-bottom:20px;
+        }
+
+        .admission p{
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        /* Footer */
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            .hero-content h1{
+                font-size:40px;
+            }
+
+            .hero-content p{
+                font-size:18px;
+            }
+
+            .about{
+                flex-direction:column;
+            }
+
+            .about img{
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bright Future Academy</h1>
+            <p>Empowering Students for a Better Tomorrow</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- About School -->
+    <section class="about">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="School Image">
+
+        <div class="about-text">
+            <h2>Why Choose Us?</h2>
+            <p>
+                Bright Future Academy provides high-quality education with modern classrooms,
+                experienced teachers, digital learning, sports facilities, and personality
+                development programs. Our mission is to inspire students to achieve excellence
+                in academics and life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>Our Special Features</h2>
+
+        <div class="feature-box">
+
+            <div class="card">
+                <h3>Smart Classrooms</h3>
+                <p>Interactive digital learning experience with modern technology.</p>
+            </div>
+
+            <div class="card">
+                <h3>Expert Teachers</h3>
+                <p>Highly qualified and dedicated teaching staff for every subject.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sports & Activities</h3>
+                <p>Encouraging students in sports, arts, music, and cultural events.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Admission -->
+    <section class="admission">
+        <h2>Admissions Open 2026</h2>
+        <p>Enroll today and shape your child’s bright future with us.</p>
+
+        <a href="#" class="btn">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bright Future Academy | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

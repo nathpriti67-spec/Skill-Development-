@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Basket Fruit Shop</title>
+</head>
+<body style="font-family: Arial; background-color: #f4fff4;">
+
+    <center>
+        <h1 style="color: green;">🍎 Fresh Basket Fruit Shop 🍌</h1>
+        <p>Order fresh and healthy fruits online</p>
+    </center>
+
+    <hr>
+
+    <form style="width: 50%; margin: auto; background-color: white; padding: 20px; border: 2px solid green; border-radius: 10px;">
+
+        <h2>Customer Details</h2>
+
+        <label>Customer Name:</label><br>
+        <input type="text" name="customer_name" placeholder="Enter your name" required><br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="mobile" placeholder="Enter mobile number" required><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" placeholder="Enter email"><br><br>
+
+        <label>Delivery Address:</label><br>
+        <textarea name="address" rows="4" cols="40" placeholder="Enter delivery address"></textarea><br><br>
+
+        <h2>Select Fruits</h2>
+
+        <input type="checkbox" name="fruit" value="Apple"> Apple 🍎<br>
+        <input type="checkbox" name="fruit" value="Banana"> Banana 🍌<br>
+        <input type="checkbox" name="fruit" value="Orange"> Orange 🍊<br>
+        <input type="checkbox" name="fruit" value="Mango"> Mango 🥭<br>
+        <input type="checkbox" name="fruit" value="Grapes"> Grapes 🍇<br><br>
+
+        <label>Quantity (kg):</label><br>
+        <input type="number" name="quantity" min="1" max="50"><br><br>
+
+        <label>Payment Method:</label><br>
+        <select name="payment">
+            <option>Cash on Delivery</option>
+            <option>UPI</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+        </select><br><br>
+
+        <label>Delivery Date:</label><br>
+        <input type="date" name="delivery_date"><br><br>
+
+        <input type="submit" value="Place Order" style="background-color: green; color: white; padding: 10px 20px; border: none;">
+
+        <input type="reset" value="Clear Form" style="background-color: red; color: white; padding: 10px 20px; border: none;">
+
+    </form>
+
+</body>
+</html>
